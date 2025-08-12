@@ -27,7 +27,7 @@ provider "azapi" {}
 
 
 module "monitoring" {
-  source                      = "git::https://ADV-SysDev@dev.azure.com/ADV-SysDev/Azure%20Governance/_git/-shared-tf-modules//azuremonitor"
+  source                      = "git::https://github.com/advania/terraform-azurerm-azgov-monitoring?ref=main"
   customer_name               = ""
   subscription_id             = local.subscription_id
   location                    = "northeurope"
